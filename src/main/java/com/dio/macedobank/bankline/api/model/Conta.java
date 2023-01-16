@@ -6,16 +6,13 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Embeddable
+@Getter @Setter
 public class Conta {
-	
+
 	@Column(name = "conta_numero")
-	@Getter @Setter
 	private Long numero;
-	
+
 	@Column(name = "conta_saldo")
-	@Getter 
 	private Double saldo;
-	
-	
 
 }
